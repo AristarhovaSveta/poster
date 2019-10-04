@@ -1,0 +1,199 @@
+
+@font-face {
+    font-family: 'YandexSansText-Regular';
+    src: url('./fonts/YandexSansText-Regular.ttf') format("truetype");
+    font-style: normal; 
+}
+
+@font-face {
+    font-family: 'YandexSansDisplay-Regular';
+    src: url('./fonts/YandexSansDisplay-Regular.ttf') format("truetype");
+    font-style: normal; 
+}
+
+.layout {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container_text {
+    padding: 0 0 0 50px;
+    font-family: 'YandexSansDisplay-Regular';
+    width: 560px;
+}
+
+.logotip {
+    font-family: 'YandexSansText-Regular';
+    font-size: 30px;
+    margin: 75px 0 64px 0;
+    width: 90px; 
+    height: 32px;
+}
+
+.logotip::first-letter {
+    color: red;
+}
+
+.title {
+    width: 570px;
+}
+
+.course_name {
+    font-size: 48px;
+    margin: 0 0 40px 0;
+}
+
+.subtitle {
+    font-size: 30px;
+    margin: 0 0 60px 0;
+}
+
+.info {
+    display: left;
+    width: 540px;
+    font-size: 12px;
+    font-family: 'YandexSansDisplay-Regular';
+}
+
+.all_content {
+    display: flex;
+    margin: 0 0 44px 0;
+}
+
+.content_1 {
+    width: 55%;
+}
+
+.content_2 {
+    width: 48%;
+}
+
+.content_1 span {
+    margin: 0;
+}
+
+ul {
+    padding: 0;
+    margin-left: 10px;
+}
+
+.teachers {
+    margin: 0 0 26px 0;
+}
+
+
+.shape_container {
+    margin: 90px 0 0 0;
+    width: 630px;
+    height: 212px;
+    position: relative;
+}
+
+.circle {
+    position: absolute;
+    width: 200px; 
+    height: 200px;
+    background: #ffcc00;
+    border-radius: 50%;
+    top: 0;
+    left: 258px;
+}
+
+.square {
+    position: absolute;
+    height: 113px;
+    width: 102px;
+    background: black;
+    top: 99px;
+    left: 156px;
+    
+}
+
+.triangle {
+    position: absolute;
+    width: 0; 
+    height: 0;
+    border-left: 50px solid transparent;
+    border-right: 50px solid transparent;
+    border-bottom: 75px solid red;
+    transform: rotate(-30deg);
+    top: 4px;
+    left: 160px;
+}
+
+
+.hexagon:before {
+    content: "";
+    height: 0;
+    border-bottom: 30px solid red;
+    border-left: 50px solid transparent;
+    border-right: 50px solid transparent;
+    position: absolute;
+    top: -29px;
+  }
+  
+  .hexagon {
+    top: 140px;
+    left: 75px;
+    width: 100px;
+    height: 60px;
+    position: absolute;
+    background-color: red;
+    transform: rotate(-15deg) scale(0.55, 0.55);
+  }
+  
+  .hexagon:after {
+    content: "";
+    position: absolute;
+    bottom: -29px;
+    border-top: 30px solid red;
+    border-left: 50px solid transparent;
+    border-right: 50px solid transparent;
+  }
+
+.pentagon {
+    left: 464px;
+    top: 119px;
+    position: absolute;
+    width: 54px;
+    border-width: 50px 18px 0;
+    border-style: solid;
+    border-color: red transparent;
+    transform: rotate(-30deg) scale(1.2, 1.2);
+}
+.pentagon:before {
+    content: "";
+    position: absolute;
+    height: 0;
+    width: 0;
+    top: -85px;
+    left: -18px;
+    border-width: 0 45px 35px;
+    border-style: solid;
+    border-color: transparent transparent red;
+}
+
+.trapezoid_1 {
+    position: absolute;
+    top: 85px;
+    left: 6px;
+    height: 0; 
+    width: 45px;
+    border-bottom: 100px solid #ffcc00;
+    border-left: 50px solid transparent;
+    border-right: 0px solid transparent;
+    transform: rotate(-153deg) scale(-1.0, 1.0)
+}
+
+.trapezoid_2 {
+    position: absolute;
+    top: 140px;
+    left: 549px;
+    height: 0; 
+    width: 60px;
+    border-bottom: 40px solid #ffcc00;
+    border-left: 40px solid transparent;
+    border-right: 0px solid transparent;
+    transform: rotate(225deg) scale(1.0, -1.0)  
+}
